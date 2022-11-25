@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="student" class="com.example.demo.student" >
+
+        <property name="id" value="10"> </property>
+        <property name="studentName" value="neel patel"> </property>
+
+
+        <constructor-arg value="10" type="int"/>
+        <constructor-arg value="neel patel" type="String"/>
+    </bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="Student" class="com.firstspring.Student" >
+
+    <property name="id" value="10"> </property>
+    <property name="studentName" value="neel patel"> </property>
+    <property name="subjects">
+        <list>
+            <value>Maths</value>
+            <value>Science</value>
+            <value>Arts</value>
+        </list>
+    </property>
+    <property name="address" ref="address1"></property>
+
+    <property name="marks">
+        <map>
+            <entry key="Maths"  value="95"></entry>
+            <entry key="Science" value="90"></entry>
+            <entry key="Arts" value="97"></entry>
+        </map>
+    </property>
+
+
+
+    <!--        <constructor-arg value="10" type="int"/>-->
+    <!--        <constructor-arg value="neel patel" type="String"/>-->
+</bean>
+
+
+<bean id="address1" class="com.firstspring.Address">
+    <property name="addressLine1" value="DIPC"></property>
+    <property name="city" value="Ahmedabad"></property>
+    <property name="state" value="Gujrat"></property>
+    <property name="country" value="India"></property>
+</bean>
+
+
+
+</beans>
