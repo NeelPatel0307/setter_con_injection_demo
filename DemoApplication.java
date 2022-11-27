@@ -13,7 +13,7 @@ public class DemoApplication {
 
 		ApplicationContext context =
 				new ClassPathXmlApplicationContext("beans.xml");
-student neel = context.getBean("student", student.class);
+Student neel = context.getBean("Student", Student.class);
 neel.display();
 
 	}

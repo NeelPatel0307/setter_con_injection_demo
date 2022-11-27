@@ -1,4 +1,4 @@
-package com.firstspring;
+package com.example.demo;
 
 public class Address {
     private String addressLine1, city, state, country;
